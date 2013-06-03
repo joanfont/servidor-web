@@ -1,6 +1,3 @@
-
-package servidorweb;
-
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.File;
@@ -105,7 +102,7 @@ public final class HttpRequest implements Runnable {
         String mime;
         if (fileName.endsWith(".htm") || fileName.endsWith(".html")) { // HTML
             mime = "text/html";
-        } else if (fileName.endsWith("jpg") || fileName.endsWith("jpeg")) {  // jpeg
+        } else if (fileName.endsWith(".jpg") || fileName.endsWith(".jpeg")) {  // jpeg
             mime = "image/jpeg";
         } else if (fileName.endsWith(".gif")) { // gif
             mime = "image/gif";
